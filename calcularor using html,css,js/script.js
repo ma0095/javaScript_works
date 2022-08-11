@@ -12,3 +12,7 @@ function evaluateExpresion(){
 function backSpace(){
     id_result.value=id_result.value.slice(0,-1)
 }
+
+function clearBox(){
+    id_result.value=""
+}

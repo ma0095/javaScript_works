@@ -9,12 +9,12 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <h1>Calculator Design Using HTML Layout</h1>
+    <h1>Calculator Design Using HTML,JS,CSS</h1>
     <div class="container">
       <div class="header">Calculator</div>
       <input type="text" class="result" id="id_result">
       <div class="first-row">
-        <input type="button" name="" value="&radic;" class="global">
+        <input type="button" name="" value="C" class="global" onclick=" clearBox()">
         <input type="button" name="" value="(" class="global" onclick="displayNumber('(')">
         <input type="button" name="" value=")" class="global" onclick="displayNumber(')')">
         <input type="button" name="" value="%" class="global" onclick="displayNumber('%')">
@@ -39,13 +39,13 @@
       </div>
       <div class="conflict">
         <div class="left">
-          <input type="button" name="" value="0" class=" big">
-          <input type="button" name="" value="." class=" small">
-          <input type="button" name="" value="Del" class=" red small white-text top-margin">
-          <input type="button" name="" value="=" class=" green white-text big top-margin">
+          <input type="button" name="" value="0" class=" big" onclick="displayNumber('0')">
+          <input type="button" name="" value="." class=" small" onclick="displayNumber('.')">
+          <input type="button" name="" value="Del" class=" red small white-text top-margin" onclick="backSpace()">
+          <input type="button" name="" value="=" class=" green white-text big top-margin" onclick="evaluateExpresion()">
         </div>
         <div class="right">
-          <input type="button" name="" value="+" class="global grey plus">
+          <input type="button" name="" value="+" class="global grey plus" onclick="displayNumber('+')">
         </div>
       </div>
     </div>
